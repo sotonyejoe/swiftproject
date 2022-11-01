@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Overpass:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,300;1,500;1,600&family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;1,500;1,600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+}
+.navbar{
+    display: flex;
+    margin-left: 80px;
+    margin-right: 80px;
+    align-items: center;
+    margin-top: 20px;
+    background: #ffff;
+    height: 10vh;
+    
+}
+.logo{
+    display: flex;
+}
+ #swift-logo{
+    width: 200px;
+    height: auto;
+    padding-top: 20px;
+}
+nav{
+    display: flex;
+    align-items: center;
+  
+}
+.button{
+    margin-left: auto;
+ }
+#about-container{
+    background-image: url(images/callcenter.jpg);
+    background-position:center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position-y: -10px;
+    width: 100%;
+    height: 70vh;
+}
+#about-container h1{
+    font-family: 'Ubuntu', sans-serif;;
+    font-size: 45px;
+    color:  #ffff;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 90px;
+}
+#about-container p{
+    font-family: 'Ubuntu';
+    font-size: 24px;
+    color:  #ffff;
+    font-weight: 500; 
+    padding-top: 10px;
+    line-height: 22px;
+    text-align: center;
+}
+/*------- description -----*/
+#description{
+    margin-top: 50px;
+}
+.description-text, .description-image{
+    flex-basis: 50%;
+}
+.description-image img{
+    width: 100%;
+}
+.description-text h3{
+    font-family: 'Ubuntu', sans-serif;;
+    font-size: 45px;
+    color:  #2B4C9A;
+    font-weight: 700;
+}
+.description-text p{
+    font-family: 'Ubuntu';
+    font-size: 16px;
+    color:  #2B4C9A;
+    font-weight: 500; 
+    padding-top: 10px;
+    line-height: 22px;
+}
+
+/*---------- What we do ------------*/
+#what-we-do, #description, #our-story, #current-year{
+   margin-left: 80px;
+   margin-right: 80px; 
+   display: flex;
+    flex-wrap: wrap;
+}
+#what-we-do{
+    margin-top: 50px;
+}
+.do-image, .do-text{
+    flex-basis: 50%;
+}
+.do-image img{
+    width: 100%;
+
+}
+.do-text, .description-text{
+    text-align: center;
+    margin-top: 50px;
+}
+.do-text h3{
+    font-family: 'Ubuntu', sans-serif;;
+    font-size: 45px;
+    color:  #2B4C9A;
+    font-weight: 700;
+}
+.do-text p{
+    font-family: 'Ubuntu';
+    font-size: 16px;
+    color:  #2B4C9A;
+    font-weight: 500; 
+    padding-top: 10px;
+    line-height: 22px;
+}
+
+/*---------- our story ---------*/
+#our-story{
+  margin-top: 30px;
+}
+.story-text{
+    display: flex;
+    flex-wrap: wrap;
+}
+.story-year-8 h3{
+    font-family: 'Ubuntu', sans-serif;;
+    font-size: 35px;
+    color:  #ff6700;
+    font-weight: 700;
+}
+.story-year-9 h3{
+    font-family: 'Ubuntu', sans-serif;;
+    font-size: 35px;
+    color:  #ff6700;
+    font-weight: 700;
+}
+.story-year-9 p{
+    font-family: 'Ubuntu';
+    font-size: 16px;
+    color:  #2B4C9A;
+    font-weight: 500; 
+    padding-top: 10px;
+    line-height: 22px;
+    
+}
+.story-year-8, .story-year-9{
+    flex-basis: 50%;
+}
+.story-year-8 p{
+    font-family: 'Ubuntu';
+    font-size: 16px;
+    color:  #2B4C9A;
+    font-weight: 500; 
+    padding-top: 10px;
+    line-height: 22px;
+}
+.current-story-20, .current-story-21{
+    flex-basis: 50%;
+}
+.current-story-20 h3{
+    font-family: 'Ubuntu', sans-serif;;
+    font-size: 35px;
+    color:  #ff6700;
+    font-weight: 700;
+}
+.current-story-20 p{
+    font-family: 'Ubuntu';
+    font-size: 16px;
+    color:  #2B4C9A;
+    font-weight: 500; 
+    padding-top: 10px;
+    line-height: 22px;
+}
+.current-story-21 h3{
+    font-family: 'Ubuntu', sans-serif;;
+    font-size: 35px;
+    color:  #ff6700;
+    font-weight: 700;
+}
+.current-story-21 p{
+    font-family: 'Ubuntu';
+    font-size: 16px;
+    color:  #2B4C9A;
+    font-weight: 500; 
+    padding-top: 10px;
+    line-height: 22px;
+}
