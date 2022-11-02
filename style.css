@@ -17,7 +17,6 @@
     align-items: center;
     margin-top: 20px;
     background: #ffff;
-    width: 100%;
     
 }
 .logo{
@@ -45,8 +44,8 @@ ul{
      color:  #2B4C9A;
      font-weight: 500;
  }
-.button{
-    margin-left: 400px;
+.login-button{
+    margin-left: auto;
     
  }
  .burger{
