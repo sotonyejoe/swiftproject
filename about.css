@@ -36,7 +36,7 @@ nav{
 .button{
     margin-left: auto;
  }
-#about-container{
+.about-container{
     background-image: url(images/callcenter.jpg);
     background-position:center;
     background-size:cover;
@@ -45,7 +45,7 @@ nav{
     width: 100%;
     height: 70vh;
 }
-#about-container h1{
+.about-container h1{
     font-family: 'Ubuntu', sans-serif;;
     font-size: 45px;
     color:  #ffff;
@@ -53,7 +53,7 @@ nav{
     text-align: center;
     padding-top: 90px;
 }
-#about-container p{
+.about-container p{
     font-family: 'Ubuntu';
     font-size: 24px;
     color:  #ffff;
@@ -63,7 +63,7 @@ nav{
     text-align: center;
 }
 /*------- description -----*/
-#description{
+.description{
     margin-top: 50px;
 }
 .description-text, .description-image{
@@ -88,14 +88,14 @@ nav{
 }
 
 /*---------- What we do ------------*/
-#what-we-do, #description, #our-story, #current-year{
+.what-we-do, .description, .our-story, .current-year{
    margin-left: 80px;
    margin-right: 80px; 
    display: flex;
     flex-wrap: wrap;
 }
-#what-we-do{
-    margin-top: 50px;
+.what-we-do{
+    margin-top: 70px;
 }
 .do-image, .do-text{
     flex-basis: 50%;
@@ -124,7 +124,7 @@ nav{
 }
 
 /*---------- our story ---------*/
-#our-story{
+.our-story{
   margin-top: 30px;
 }
 .story-text{
@@ -194,3 +194,128 @@ nav{
     padding-top: 10px;
     line-height: 22px;
 }
+
+/*--------- media queries -------*/
+@media screen and (max-width: 770px){
+    .navbar{
+        margin-left: 40px;
+        margin-right: 40px;
+      
+        
+    }
+     #swift-logo{
+        width: 200px;
+        height: auto;
+        padding-top: 20px;
+        margin-left: -40px;
+    }
+    .home-button{
+        display: none;
+     }
+    .about-container h1{
+        font-size: 2.188rem;
+        padding-top: 90px;
+    }
+    .about-container p{  
+        font-size: 1rem;
+        padding-top: 10px;
+        line-height: 19px;
+    }
+    .description{
+        margin-top: 30px;
+    }
+    .description-text, .description-image{
+        flex-basis: 100%;
+    }
+    .description-image img{
+        width: 100%;
+    }
+    .description-text h3{
+        font-size: 2rem;
+    }
+    .description-text p{
+        font-size: 0.875rem;
+        padding-top: 10px;
+        line-height: 19px;
+        margin-bottom: 20px;
+    }
+    
+/*---------- What we do ------------*/
+.what-we-do, .description, .our-story, .current-year{
+    margin-left: 20px;
+    margin-right: 20px; 
+    display: block;
+ }
+ .what-we-do{
+     margin-top: 50px;
+ }
+ .do-image, .do-text{
+     flex-basis: 100%;
+ }
+ .do-image img{
+     width: 100%;
+ 
+ }
+ .do-text, .description-text{
+     text-align: center;
+     margin-top: 50px;
+ }
+ .do-text h3{
+     font-size: 2rem;
+     color:  #2B4C9A;
+     font-weight: 700;
+ }
+ .do-text p{
+     font-size: 0.875rem;
+     padding-top: 10px;
+     line-height: 22px;
+ }
+ /*---------- our story ---------*/
+.our-story{
+    margin-top: 30px;
+  }
+  .story-text{
+      display: block;
+  }
+  .story-year-8 h3{
+      font-size: 2rem;
+  }
+  .story-year-9 h3{
+      font-size: 2rem;
+  }
+  .story-year-9 p{
+      font-size: 0.875rem;
+      padding-top: 10px;
+      line-height: 19px;
+      margin-bottom: 20px;
+      
+  }
+  .story-year-8, .story-year-9{
+      flex-basis: 100%;
+  }
+  .story-year-8 p{
+      font-size: 0.875rem;
+      padding-top: 10px;
+      line-height: 19px;
+      margin-bottom: 20px;
+  }
+  .current-story-20, .current-story-21{
+      flex-basis: 100%;
+  }
+  .current-story-20 h3{
+      font-size: 2rem;
+  }
+  .current-story-20 p{
+      font-size: 0.875rem;
+      line-height: 19px;
+      margin-bottom: 20px;
+  }
+  .current-story-21 h3{
+      font-size: 2rem;
+  }
+  .current-story-21 p{
+      font-size: 0.875rem;
+      line-height: 19px;
+  }
+ 
+} 

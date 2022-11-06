@@ -8,69 +8,59 @@
 }
 .container{
     height: 100vh;
+
+}
+.header-container{
+    margin-left: 40px;
+    margin-right: 40px;
     width: 100%;
-}
-.navbar{
-    display: flex;
-    margin-left: 80px;
-    margin-right: 80px;
     align-items: center;
-    margin-top: 20px;
-    background: #ffff;
-    
+    justify-content: center;
+    /* height: 30vh; */
 }
-.logo{
-    display: flex;
-}
- #swift-logo{
-    width: 200px;
+img{
+    width: 150px;
     height: auto;
-    padding-top: 20px;
 }
 nav{
-    display: flex;
-    align-items: center;
-    width: 100%;
-  
+    float: right;
+    text-align: center;
+    margin-right: 80px;
+    margin-top: 40px;
 }
-ul{
+li{
     list-style: none;
-    flex: 5;
+    display: inline-block;
 }
- li{
-     display: inline-block;
-     margin: 0px 30px;
-     font-family: 'Ubuntu', sans-serif;;
-     color:  #2B4C9A;
-     font-weight: 500;
- }
-.login-button{
-    margin-left: auto;
-    
- }
- .burger{
-     display: none;
- }
- #login{
-     cursor: pointer;
-     color: #ffff;
- }
- .login{
-    padding: 10px 25px;
-    border-radius: 18px;
-    outline: none;
-    border: none;
-    background: #2B4C9A;
-    color: #ffff;
-    font-family: 'Ubuntu', sans-serif;;
+a{
+    padding:0 20px;
+    color:#2B4C9A;
+    font-size: 1.5rem;
     font-weight: 500;
- }
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration:none;  
+    /* display:block; */
+}
+.login-btn{
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 700;
+        font-size: 1.2rem;
+        margin-left: 40px;
+        padding: 8px 20px;
+        border-radius: 15px;
+        outline: none;
+        border: none;
+        background: #2B4C9A;
+        color: #ffff;
+    
+}
  /*--------- hero ------------*/
- #hero{
+ .hero{
      display: flex;
      flex-wrap: wrap;
      margin-left: 80px;
      margin-right: 80px;
+     margin-top: 30px;
  }
  .hero-text, .hero-image{
      flex-basis: 50%;
@@ -82,7 +72,7 @@ ul{
      margin-top: 50px;
  }
  .hero-text h1{
-    font-family: 'Ubuntu', sans-serif;;
+    font-family: 'Ubuntu', sans-serif;
     font-size: 45px;
     color:  #2B4C9A;
     font-weight: 700;
@@ -112,7 +102,7 @@ ul{
  }
  /*----------------- Best Delivery ---------------*/
 
- #best-delivery{
+ .best-delivery{
     margin-left: 80px;
     margin-right: 80px;
     margin-top: 70px;
@@ -146,20 +136,20 @@ ul{
 }
 /* ------choose a delivery ---------------*/
 
-#choose-delivery{
+.choose-delivery{
     margin-left: 80px;
     margin-right: 80px;
     margin-top: 70px;
     justify-content: center;
  }
- #choose-delivery h1{
+ .choose-delivery h1{
     font-family: 'Ubuntu', sans-serif;
     font-size: 40px;
     color:  #2B4C9A;
     font-weight: 700;
     text-align: center;  
  }
- #choose-delivery p{
+ .choose-delivery p{
     text-align: center;
     font-family: 'Ubuntu', sans-serif;;
     font-size: 16px;
@@ -189,7 +179,7 @@ ul{
     margin-top: 30px;
 }
 /*---------------- Got a Bike -------------*/
-#got-a-bike{
+.got-a-bike{
     margin-left: 80px;
     margin-right: 80px;
     margin-top: 70px;  
@@ -200,7 +190,7 @@ ul{
 }
 
 /*----------------partner -------------*/
-#partner{
+.partner{
     margin-left: 80px;
     margin-right: 80px;
     margin-top: 70px;  
@@ -287,3 +277,173 @@ ul{
 }
 
 /*----------- footer ------------*/
+
+/*----- media Queries ----*/
+@media screen and (max-width: 770px){
+
+  /*--------- hero ------------*/
+  .hero{
+    display: block;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.hero-text, .hero-image{
+    flex-basis: 100%;
+}
+.hero-image img{
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 150px;
+}
+.hero-text{
+    margin-top: 50px;
+    text-align: center;
+}
+.hero-text h1{
+   font-size: 2rem;
+}
+.hero-text p{
+   font-family: 'Ubuntu';
+   font-size: 0.875rem;
+   padding-top: 10px;
+   line-height: 22px;
+}
+#serve{
+    padding-top: 2px;
+}
+.deliver-btn{
+   padding: 15px 28px;
+   border-radius: 18px;
+   font-size: 18px;
+   margin-top: 35px;
+}
+/*----------------- Best Delivery ---------------*/
+
+.best-delivery{
+   margin-left: 20px;
+   margin-right:20px;
+   margin-top:-180px;
+   
+}
+.delivery-container{
+   display: block;
+}
+.delivery-text, .delivery-image{
+   flex-basis: 100%;
+}
+.delivery-image img{
+   width: 100%;
+}
+.delivery-text{
+   margin-top: 30rem;
+   text-align: center;
+}
+.delivery-text h2{
+   font-size: 2rem;
+}
+.delivery-text p{
+   font-size: 0.875rem;
+   padding-top: 10px;   
+}
+/* ------choose a delivery ---------------*/
+
+.choose-delivery{
+   margin-left: 20px;
+   margin-right: 20px;
+   margin-top: 70px;
+}
+.choose-delivery h1{
+   font-size: 2rem;
+   color:  #2B4C9A;
+}
+.choose-delivery p{
+   font-size: 0.875rem;
+   padding-top: 10px;  
+}
+.choose-container{
+   grid-template-columns:1fr;
+   padding: 10px 5px;
+}
+.choose-container p{
+   font-size: 0.875rem; 
+   padding-top: 10px; 
+   margin-bottom: 20px;
+}
+.delivery img{
+   width: 100%
+}
+.delivery{
+   margin-top: 30px;
+}
+/*---------------- Got a Bike -------------*/
+.got-a-bike{
+   margin-left: 20px;
+   margin-right: 20px;
+   margin-top: -100px;  
+}
+.got-a-bike-container{
+   display: block;
+}
+
+/*----------------partner -------------*/
+.partner{
+   margin-left: 20px;
+   margin-right: 20px;
+   margin-top: 70px;  
+}
+.partner-container{
+   display: block;
+}
+.partner-text, .partner-image{
+   flex-basis: 100%;
+}
+.partner-image img{
+   width: 100%;
+}
+.partner-text{
+   margin-top: 80px;
+}
+.partner-text h2{
+   font-size: 2rem;
+}
+.partner-text p{
+   font-size: 0.875rem;
+   padding-top: 10px;   
+}
+
+/*----------- customers reviews -------------*/
+
+#customer-reviews{
+   margin-left: 20px;
+   margin-right: 20px;
+   margin-top: 70px;
+}
+#customer-reviews h1{
+   font-size: 2rem;;  
+}
+.customer-container{
+   grid-template-columns: 1fr;
+   padding: 10px 5px;
+   
+}
+.customer{
+   margin-top: 30px;
+ padding: 5px;
+ 
+}  
+.customer p{
+   font-size: 0.875rem;
+   padding-top: 30px; 
+   margin-bottom: 20px;
+}
+.customer h2{
+   font-size: 1rem;
+}
+.partner-with-us{
+   padding: 15px 28px;
+   border-radius: 18px;
+   font-size: 1rem;
+   margin-top: 35px;
+}
+
+}
